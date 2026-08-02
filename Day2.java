@@ -130,5 +130,5 @@ class Day2 {
     //     String E = (age >= 18) ? "Eligible" : "Not Eligible";
     //     System.out.println("Vote Eligibility : " + E);
 
-    // }
+    }
 }
