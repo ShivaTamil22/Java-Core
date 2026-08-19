@@ -1,4 +1,12 @@
 {
     "editor.inlineSuggest.edits.allowCodeShifting": "always",
-    "editor.inlineSuggest.enabled": false
+    "editor.inlineSuggest.enabled": true,
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.preview": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "terminal.integrated.suggest.suggestOnTriggerCharacters": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "debug.console.acceptSuggestionOnEnter": "on"
 }
