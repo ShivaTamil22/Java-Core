@@ -1,6 +1,9 @@
+import java.util.Calendar;
 import java.util.Date;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
@@ -66,12 +69,45 @@ public class Day4 {
 
         // DateTimeFormatter
 
-        LocalDateTime today = LocalDateTime.now();
+        // LocalDateTime today = LocalDateTime.now();
 
-        DateTimeFormatter form = DateTimeFormatter.ofPattern(" dd-MM-yyyy hh:mm:ss a");
-        System.out.println(today.format(form));
-        DateTimeFormatter form1 = DateTimeFormatter.ofPattern(" EEEE dd-MM-yyyy hh:mm:ss a");System.out.println(today.format(form));
-        System.out.println(today.format(form1));
+        // DateTimeFormatter form = DateTimeFormatter.ofPattern(" dd-MM-yyyy hh:mm:ss a");
+        // System.out.println(today.format(form));
+        // DateTimeFormatter form1 = DateTimeFormatter.ofPattern(" EEEE dd-MM-yyyy hh:mm:ss a");
+        // System.out.println(today.format(form1));
+
+        // Period 
+
+        // LocalDate start = LocalDate.of(2004,11,22);
+        // LocalDate end = LocalDate.now();
+        // Period age   = Period.between(start,end);
+        // System.out.println(age.getYears());
+        
+        // Duration
+        // LocalTime T1 = LocalTime.of(2,30);
+        // LocalTime T2 = LocalTime.of(12,30);
+        // Duration time = Duration.between(T1,T2);
+        // System.out.println(time.toHours());
+        // System.out.println(time.toMinutes());
+
+        // Calener
+        // Calendar today = Calendar.getInstance();
+        // System.out.println(today.get(Calendar.YEAR));
+        // System.out.println(today.get(Calendar.MONTH));
+        // System.out.println(today.get(Calendar.DAY_OF_MONTH));
+        // System.out.println(today.get(Calendar.DAY_OF_WEEK));
+        // System.out.println(today.get(Calendar.HOUR));
+        // System.out.println(today.get(Calendar.MINUTE));
+
+        Calendar today = Calendar.getInstance();
+        // today.set(2004,11,22);
+        // System.out.println(today.getTime());
+        today.add(Calendar.DAY_OF_MONTH,10);
+        System.out.println(today.getTime());
+
+
+
+       
 
 
 
